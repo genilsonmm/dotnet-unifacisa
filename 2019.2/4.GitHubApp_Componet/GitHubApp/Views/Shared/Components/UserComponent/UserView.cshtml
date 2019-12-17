@@ -1,0 +1,16 @@
+﻿@model GitHubApp.Models.User
+
+<tr>
+    <td>
+        @Model.Id
+    </td>
+    <td>
+        <img src="@Model.Avatar_Url" width="30" height="30" />
+    </td>
+    <td>
+        @Model.Login
+    </td>
+    <td>
+        <a href="@Model.Html_Url" target="_blank">@Model.Html_Url</a>
+    </td>
+</tr>

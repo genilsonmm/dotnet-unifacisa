@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InvestmentFundApp.Details">
+
+    <StackLayout Padding="10" Orientation="Vertical">
+
+        <Image Source="main_icon.png" WidthRequest="60"/>
+
+        <Label 
+            x:Name="lblFundName"
+            Text="BCFF11" 
+            FontSize="22"
+            TextColor="Green"
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="lblTotal"
+            Text="R$309,90" 
+            FontSize="12"
+            TextColor="Green"
+            HorizontalOptions="Center" />
+
+        <ListView x:Name="lstHistory">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <FlexLayout Direction="Row">
+                            <Label Text="{Binding Date}"
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   FlexLayout.Basis="30%"/>
+                            <Label Text="{Binding Quantity}" 
+                                   HorizontalTextAlignment="Center"
+                                   FlexLayout.Basis="35%"
+                                   FlexLayout.AlignSelf="Center"/>
+                            <Label Text="{Binding Price, StringFormat='{0:C}'}" 
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   FlexLayout.Basis="30%"
+                                   FlexLayout.AlignSelf="Center"/>
+                        </FlexLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="btnPrevious" 
+                Clicked="BtnPrevious_Clicked"
+                Text="Voltar" 
+                BackgroundColor="Blue"
+                TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:InvestmentFundApp"
+             x:Class="InvestmentFundApp.MainPage">
+
+    <StackLayout Padding="10" Orientation="Vertical">
+
+        <Label 
+            Text="Caterira de Fundos" 
+            FontSize="22"
+            TextColor="Green"
+            HorizontalOptions="Center" />
+
+        <Image Source="main_icon.png" WidthRequest="60"/>
+
+        <FlexLayout Direction="Row">
+            <Entry FlexLayout.Basis="50%" 
+                   x:Name="entFund" 
+                   Placeholder="Fundo"/>
+            <Entry FlexLayout.Basis="50%" 
+                   x:Name="entQuantity"
+                   Keyboard="Numeric"
+                   Placeholder="Quantidade"/>
+        </FlexLayout>
+
+        <FlexLayout Direction="Column">
+            <Entry x:Name="entPrice" 
+                   Keyboard="Numeric"
+                   Placeholder="Preço unitário"/>
+
+            <Button x:Name="btnSave" 
+                Text="Cadastrar" 
+                BackgroundColor="Blue"
+                TextColor="White"
+                WidthRequest="150"
+                FlexLayout.AlignSelf="End"
+                Clicked="BtnSave_Clicked"/>
+        </FlexLayout>
+
+        <ListView x:Name="lstFunds" ItemSelected="LstFunds_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <FlexLayout Direction="Row">
+                            <Label Text="{Binding Name}"
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   FlexLayout.Basis="30%"/>
+                            <Label Text="{Binding Quantity}" 
+                                   HorizontalTextAlignment="Center"
+                                   FlexLayout.Basis="35%"
+                                   FlexLayout.AlignSelf="Center"/>
+                            <Label Text="{Binding Price, StringFormat='{0:C}'}" 
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"
+                                   FlexLayout.Basis="30%"
+                                   FlexLayout.AlignSelf="Center"/>
+                        </FlexLayout>
+                        
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿@model IEnumerable<GitHubApp.Models.User>
+
+@{
+    ViewData["Title"] = "GitHub API";
+}
+
+<h1>GitHub API</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avatar_Url)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Login)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Html_Url)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var user in Model) {
+        <tr>
+            <td>
+                @user.Id
+            </td>
+            <td>
+                <img src="@user.Avatar_Url" width="30" height="30" />
+            </td>
+            <td>
+                @user.Login
+            </td>
+            <td>
+                <a href="@user.Html_Url" target="_blank">@user.Html_Url</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App4"
+             x:Class="App4.MainPage">
+
+    <StackLayout>
+
+        <Label x:Name="lblMessage" HorizontalOptions="Center"/>
+
+        <Entry x:Name="entCurso" Placeholder="Curso"/>
+
+        <Button x:Name="btnDialog" Text="Button1" Clicked="Button_Clicked"/>
+
+        <ListView x:Name="lstItens" ItemSelected="LstItens_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label 
+                            Text="{Binding Login}"
+                              HorizontalOptions="Center"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

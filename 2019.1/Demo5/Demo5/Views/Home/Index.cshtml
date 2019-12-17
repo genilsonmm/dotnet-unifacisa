@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Demo5.Models.User>
+@using Demo5.Components
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@await Component.InvokeAsync("TitleComponent")
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Foto</th>
+            <th>Id</th>
+            <th>Login</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @await Component.InvokeAsync("UserComponent", new { user = item})
+        }
+    </tbody>
+</table>
+
+

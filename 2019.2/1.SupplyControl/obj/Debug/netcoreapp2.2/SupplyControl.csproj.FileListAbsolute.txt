@@ -1,0 +1,11 @@
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\bin\Debug\netcoreapp2.2\SupplyControl.deps.json
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\bin\Debug\netcoreapp2.2\SupplyControl.runtimeconfig.json
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\bin\Debug\netcoreapp2.2\SupplyControl.runtimeconfig.dev.json
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\bin\Debug\netcoreapp2.2\SupplyControl.dll
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\bin\Debug\netcoreapp2.2\SupplyControl.pdb
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\obj\Debug\netcoreapp2.2\SupplyControl.csprojAssemblyReference.cache
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\obj\Debug\netcoreapp2.2\SupplyControl.csproj.CoreCompileInputs.cache
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\obj\Debug\netcoreapp2.2\SupplyControl.AssemblyInfoInputs.cache
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\obj\Debug\netcoreapp2.2\SupplyControl.AssemblyInfo.cs
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\obj\Debug\netcoreapp2.2\SupplyControl.dll
+C:\Users\Genilson\Documents\unifacisa\dotnet\2019.2\curso-dotnet-2019.2\1.SupplyControl\obj\Debug\netcoreapp2.2\SupplyControl.pdb
