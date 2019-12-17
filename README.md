@@ -4,7 +4,7 @@ Repositório contendo todos os projetos implementados durante o curso de dotnet.
 
 ### Semestres
 
-2019.1
+2019.1 <br>
 2019.2
 2020.1
 
