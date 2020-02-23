@@ -1,0 +1,11 @@
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\bin\Debug\netcoreapp2.2\ClinicaOdontologica.deps.json
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\bin\Debug\netcoreapp2.2\ClinicaOdontologica.runtimeconfig.json
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\bin\Debug\netcoreapp2.2\ClinicaOdontologica.runtimeconfig.dev.json
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\bin\Debug\netcoreapp2.2\ClinicaOdontologica.dll
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\bin\Debug\netcoreapp2.2\ClinicaOdontologica.pdb
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\obj\Debug\netcoreapp2.2\ClinicaOdontologica.csprojAssemblyReference.cache
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\obj\Debug\netcoreapp2.2\ClinicaOdontologica.csproj.CoreCompileInputs.cache
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\obj\Debug\netcoreapp2.2\ClinicaOdontologica.AssemblyInfoInputs.cache
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\obj\Debug\netcoreapp2.2\ClinicaOdontologica.AssemblyInfo.cs
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\obj\Debug\netcoreapp2.2\ClinicaOdontologica.dll
+D:\Programming\Unifacisa\dotnet-unifacisa\2020.1\1 Exemplo\ClinicaOdontologica\ClinicaOdontologica\obj\Debug\netcoreapp2.2\ClinicaOdontologica.pdb
