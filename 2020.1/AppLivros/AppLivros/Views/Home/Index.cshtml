@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Livro>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h1 class="display-4">Livros disponíveis</h1>
+   
+    <table class="table table-striped">
+        <tr>
+            <td>Id</td>
+            <td>Título</td>
+            <td>Editora</td>
+            <td>Páginas</td>
+            <td>Remover</td>
+        </tr>
+
+        @foreach (var livro in Model)
+        {
+            <tr>
+                <td>@livro.Id</td>
+                <td>@livro.Titulo</td>
+                <td>@livro.Editora</td>
+                <td>@livro.QntPaginas</td>
+                <td><a asp-controller="Livro" asp-action="Deletar" asp-route-id="@livro.Id">Remover</a></td>
+            </tr>
+        }
+
+     </table>
+</div>
