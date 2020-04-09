@@ -12941,11 +12941,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Genilson\\source\\repos\\AppLivros\\AppLivros\\AppLivros.csproj",
+      "projectUniqueName": "D:\\Programming\\Unifacisa\\dotnet-unifacisa\\dotnet-unifacisa\\2020.1\\AppLivros\\AppLivros\\AppLivros.csproj",
       "projectName": "AppLivros",
-      "projectPath": "C:\\Users\\Genilson\\source\\repos\\AppLivros\\AppLivros\\AppLivros.csproj",
+      "projectPath": "D:\\Programming\\Unifacisa\\dotnet-unifacisa\\dotnet-unifacisa\\2020.1\\AppLivros\\AppLivros\\AppLivros.csproj",
       "packagesPath": "C:\\Users\\Genilson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Genilson\\source\\repos\\AppLivros\\AppLivros\\obj\\",
+      "outputPath": "D:\\Programming\\Unifacisa\\dotnet-unifacisa\\dotnet-unifacisa\\2020.1\\AppLivros\\AppLivros\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\ProgramData\\Xamarin\\NuGet\\",

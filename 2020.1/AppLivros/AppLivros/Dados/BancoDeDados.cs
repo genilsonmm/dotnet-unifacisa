@@ -28,6 +28,12 @@ namespace AppLivros.Dados
             livros.Add(livro);
         }
 
+        public void Remover(int id)
+        {
+            Livro livroParaRemover = livros.Where(l => l.Id == id).FirstOrDefault();
+            livros.Remove(livroParaRemover);
+        }
+
         public List<Livro> GetAll()
         {
             return livros;

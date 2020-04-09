@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AppLivros.Dados;
+﻿using AppLivros.Dados;
 using AppLivros.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +24,12 @@ namespace AppLivros.Controllers
             ModelState.Clear();
 
             return View("Cadastrar");
+        }
+
+        public IActionResult Deletar(int id)
+        {
+            BancoDeDados.Instance().Remover(id);
+            return RedirectToAction("Index", "Home");
         }
     }
 }
