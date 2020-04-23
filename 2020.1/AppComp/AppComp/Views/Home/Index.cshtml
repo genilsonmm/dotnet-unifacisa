@@ -1,0 +1,27 @@
+﻿@model IEnumerable<AppComp.Models.User>
+
+@addTagHelper *, AppComp
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<vc:title-component />
+
+<table class="table">
+    <tr>
+        <td>Id</td>
+        <td>Nome</td>
+        <td>E-mail</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <vc:user-component user="@item"></vc:user-component>
+    }
+
+</table>
+
+
+
+
+

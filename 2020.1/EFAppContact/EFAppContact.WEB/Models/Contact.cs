@@ -6,9 +6,11 @@ namespace EFAppContact.WEB.Models
     public class Contact
     {
         public int Id { get; set; }
-        [Column(TypeName ="varchar(60)")]
+        [Column(TypeName = "varchar(60)")]
         [Required]
         public string Name { get; set; }
         public string Phone { get; set; }
+        public Role Role { get; set; }
+        public virtual int RoleId {get;set;}
     }
 }

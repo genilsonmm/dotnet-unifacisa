@@ -22,7 +22,8 @@ namespace EFAppContact.WEB.Controllers
         // GET: Contact
         public async Task<IActionResult> Index()
         {
-            return View(await _context.contacts.ToListAsync());
+            var dataContext = _context.contacts.Include(c => c.Role);
+            return View(await dataContext.ToListAsync());
         }
 
         // GET: Contact/Details/5
@@ -34,6 +35,7 @@ namespace EFAppContact.WEB.Controllers
             }
 
             var contact = await _context.contacts
+                .Include(c => c.Role)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (contact == null)
             {
@@ -46,6 +48,7 @@ namespace EFAppContact.WEB.Controllers
         // GET: Contact/Create
         public IActionResult Create()
         {
+            ViewData["RoleId"] = new SelectList(_context.roles, "RoleId", "Name");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace EFAppContact.WEB.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Phone")] Contact contact)
+        public async Task<IActionResult> Create([Bind("Id,Name,Phone,RoleId")] Contact contact)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace EFAppContact.WEB.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RoleId"] = new SelectList(_context.roles, "RoleId", "Name", contact.RoleId);
             return View(contact);
         }
 
@@ -78,6 +82,7 @@ namespace EFAppContact.WEB.Controllers
             {
                 return NotFound();
             }
+            ViewData["RoleId"] = new SelectList(_context.roles, "RoleId", "Name", contact.RoleId);
             return View(contact);
         }
 
@@ -86,7 +91,7 @@ namespace EFAppContact.WEB.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Phone")] Contact contact)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Phone,RoleId")] Contact contact)
         {
             if (id != contact.Id)
             {
@@ -113,6 +118,7 @@ namespace EFAppContact.WEB.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["RoleId"] = new SelectList(_context.roles, "RoleId", "Name", contact.RoleId);
             return View(contact);
         }
 
@@ -125,6 +131,7 @@ namespace EFAppContact.WEB.Controllers
             }
 
             var contact = await _context.contacts
+                .Include(c => c.Role)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (contact == null)
             {

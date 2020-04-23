@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFAppContact.WEB.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200416194301_v2")]
-    partial class v2
+    [Migration("20200423172335_contact")]
+    partial class contact
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,9 +29,34 @@ namespace EFAppContact.WEB.Migrations
 
                     b.Property<string>("Phone");
 
+                    b.Property<int>("RoleId");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("contacts");
+                });
+
+            modelBuilder.Entity("EFAppContact.WEB.Models.Role", b =>
+                {
+                    b.Property<int>("RoleId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name")
+                        .IsRequired();
+
+                    b.HasKey("RoleId");
+
+                    b.ToTable("roles");
+                });
+
+            modelBuilder.Entity("EFAppContact.WEB.Models.Contact", b =>
+                {
+                    b.HasOne("EFAppContact.WEB.Models.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
