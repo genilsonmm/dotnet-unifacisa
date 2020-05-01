@@ -32,4 +32,4 @@ D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\AppComp\AppCom
 D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\AppComp\AppComp\obj\Debug\netcoreapp2.2\AppComp.pdb
 D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\AppComp\AppComp\obj\Debug\netcoreapp2.2\AppComp.csproj.CopyComplete
 D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\AppComp\AppComp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\UserComponent\UserView.cshtml.g.cs
-D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\AppComp\AppComp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\TitleComponent\Default.cshtml.g.cs
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\AppComp\AppComp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\TitleComponent\Default.cshtml.g.cs
