@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjectTest.API.Model;
+using ProjectTest.Domain;
 
 namespace ProjectTest.API.Data
 {
@@ -11,5 +12,6 @@ namespace ProjectTest.API.Data
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }

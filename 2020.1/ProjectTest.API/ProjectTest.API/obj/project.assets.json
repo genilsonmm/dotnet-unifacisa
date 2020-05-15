@@ -4769,6 +4769,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "ProjectTest.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/ProjectTest.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProjectTest.Domain.dll": {}
+        }
       }
     }
   },
@@ -13032,6 +13042,11 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "ProjectTest.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ProjectTest.Domain/ProjectTest.Domain.csproj",
+      "msbuildProject": "../ProjectTest.Domain/ProjectTest.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13042,7 +13057,8 @@
       "Microsoft.EntityFrameworkCore.Tools.DotNet >= 2.0.3",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4",
-      "Pomelo.EntityFrameworkCore.MySql >= 2.2.0"
+      "Pomelo.EntityFrameworkCore.MySql >= 2.2.0",
+      "ProjectTest.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13078,7 +13094,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Programming\\Unifacisa\\dotnet-unifacisa\\dotnet-unifacisa\\2020.1\\ProjectTest.API\\ProjectTest.Domain\\ProjectTest.Domain.csproj": {
+              "projectPath": "D:\\Programming\\Unifacisa\\dotnet-unifacisa\\dotnet-unifacisa\\2020.1\\ProjectTest.API\\ProjectTest.Domain\\ProjectTest.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

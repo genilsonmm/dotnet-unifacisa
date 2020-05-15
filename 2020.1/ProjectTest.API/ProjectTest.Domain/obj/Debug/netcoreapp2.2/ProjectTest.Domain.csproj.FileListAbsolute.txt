@@ -1,0 +1,8 @@
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\bin\Debug\netcoreapp2.2\ProjectTest.Domain.deps.json
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\bin\Debug\netcoreapp2.2\ProjectTest.Domain.dll
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\bin\Debug\netcoreapp2.2\ProjectTest.Domain.pdb
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\obj\Debug\netcoreapp2.2\ProjectTest.Domain.csproj.CoreCompileInputs.cache
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\obj\Debug\netcoreapp2.2\ProjectTest.Domain.AssemblyInfoInputs.cache
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\obj\Debug\netcoreapp2.2\ProjectTest.Domain.AssemblyInfo.cs
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\obj\Debug\netcoreapp2.2\ProjectTest.Domain.dll
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.Domain\obj\Debug\netcoreapp2.2\ProjectTest.Domain.pdb

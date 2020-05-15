@@ -16,3 +16,6 @@ D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.AP
 D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.API\obj\Debug\netcoreapp2.2\ProjectTest.API.pdb
 D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.API\obj\Debug\netcoreapp2.2\ProjectTest.API.genruntimeconfig.cache
 D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.API\obj\Debug\netcoreapp2.2\ProjectTest.API.csproj.CoreCompileInputs.cache
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.API\bin\Debug\netcoreapp2.2\ProjectTest.Domain.dll
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.API\bin\Debug\netcoreapp2.2\ProjectTest.Domain.pdb
+D:\Programming\Unifacisa\dotnet-unifacisa\dotnet-unifacisa\2020.1\ProjectTest.API\ProjectTest.API\obj\Debug\netcoreapp2.2\ProjectTest.API.csproj.CopyComplete

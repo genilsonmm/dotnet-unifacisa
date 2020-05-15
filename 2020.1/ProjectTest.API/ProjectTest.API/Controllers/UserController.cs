@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProjectTest.API.Data;
 using ProjectTest.API.Model;
+using ProjectTest.Domain;
 
 namespace ProjectTest.API.Controllers
 {
@@ -24,7 +26,7 @@ namespace ProjectTest.API.Controllers
         {
             // select * from users
             Response response = new Response();
-            response.Model = dataContext.Users.ToList();
+            response.Model = dataContext.Users.Include(tabela => tabela.Posts).ToList();
 
             return response;
         }
@@ -33,7 +35,7 @@ namespace ProjectTest.API.Controllers
         public ActionResult<Response> PesquisarPorId(Guid id)
         {
             Response response = new Response();
-            response.Model = dataContext.Users.Where(userTemp => userTemp.Id == id).FirstOrDefault();
+            response.Model = dataContext.Users.Include(tabela => tabela.Posts).Where(userTemp => userTemp.Id == id).FirstOrDefault();
 
             if (response.Model == null)
             {
@@ -48,6 +50,8 @@ namespace ProjectTest.API.Controllers
         public ActionResult<User> Cadastrar([FromBody] User user)
         {
             user.Id = Guid.NewGuid();
+
+            user.Posts.ForEach(post => post.Date = DateTime.Now);
 
             dataContext.Users.Add(user);
             dataContext.SaveChanges();
@@ -73,7 +77,7 @@ namespace ProjectTest.API.Controllers
         [HttpDelete("{id}")] 
         public ActionResult<Guid> Delete(Guid id)
         {
-            User user = dataContext.Users.Where(userTemp => userTemp.Id == id).FirstOrDefault();
+            User user = dataContext.Users.Include(tabela => tabela.Posts).Where(userTemp => userTemp.Id == id).FirstOrDefault();
 
             if(user != null)
             {
