@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ToDoList.MainPage">
+
+    <StackLayout Padding="10">
+
+        <Image Source="main_icon.png" 
+               WidthRequest="60"
+               HorizontalOptions="Center"/>
+
+        <Entry x:Name="entActivityName" Placeholder="Atividade" />
+
+        <Button x:Name="btnSave" Text="Cadastrar" 
+                Clicked="btnSave_Clicked"
+                BackgroundColor="Blue" 
+                TextColor="White" />
+
+        <ListView x:Name="lstActivities" ItemSelected="lstActivities_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{ Binding Name }" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackLayout>
+
+</ContentPage>

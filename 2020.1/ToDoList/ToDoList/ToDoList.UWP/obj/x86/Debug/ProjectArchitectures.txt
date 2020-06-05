@@ -1,0 +1,1 @@
+C:\Users\Genilson\Desktop\ToDoList\ToDoList\ToDoList.UWP\ToDoList.UWP.csproj;x86
